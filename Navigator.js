@@ -5,6 +5,7 @@ import { Favorite } from "./Screens/Favorite";
 import { Account } from "./Screens/Account";
 import { Home } from "./Screens/Home";
 
+
 const Stack = createStackNavigator();
 
 export const Navigator = () => {
@@ -39,6 +40,8 @@ export const Navigator = () => {
                     title: "",
                     headerStyle: { height: 1, backgroundColor: "#850b0b" }
                 }} />
+
+
         </Stack.Navigator>
     )
 }

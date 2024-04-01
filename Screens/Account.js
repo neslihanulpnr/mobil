@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { Octicons, AntDesign } from '@expo/vector-icons';
 import { Login } from "../Component/Login"
-import { SignUp } from '../Component/SignUp';
 
 export const Account = () => {
     const [selectedTab, setSelectedTab] = useState(null);
@@ -16,7 +15,6 @@ export const Account = () => {
             {selectedTab ? (
                 <View style={styles.contentContainer}>
                     {selectedTab === 'Login' && <Login />}
-                    {selectedTab === 'SignUp' && <SignUp />}
 
                     <TouchableOpacity onPress={handleBack} style={styles.backButton}>
                         <Text><AntDesign name="arrowleft" size={20} color="white" /></Text>

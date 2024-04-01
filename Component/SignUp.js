@@ -1,22 +1,27 @@
+import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, TextInput } from "react-native";
 
+
 export const SignUp = () => {
-    <View>
-        <View style={styles.inputContainer}>
-            <TextInput style={styles.input} placeholder="E-posta" />
-            <TextInput style={[styles.input, { marginTop: -80 }]} placeholder="Şifre" />
-            <TouchableOpacity style={styles.loginBtn}>
-                <Text style={styles.text}>Giriş Yap</Text>
-            </TouchableOpacity>
-            <Text style={{ fontWeight: "bold" }}>
-                Hesabın yok mu?{' '}
-                <TouchableOpacity onPress={() => setSelectedTab('SignUp')}>
-                    <Text style={{ color: "#b32e2e", fontWeight: "bold", top: 4, left: 2 }}>Kayıt Ol</Text>
+    return (
+        <View>
+            <View style={styles.inputContainer}>
+                <TextInput style={styles.input} placeholder="E-posta" />
+                <TextInput style={[styles.input, { marginTop: -80 }]} placeholder="Şifre" />
+                <TouchableOpacity style={styles.loginBtn}>
+                    <Text style={styles.text}>Giriş Yap</Text>
                 </TouchableOpacity>
-            </Text>
+                <Text style={{ fontWeight: "bold" }}>
+                    Hesabın yok mu?{' '}
+                    <TouchableOpacity onPress={() => setSelectedTab('SignUp')}>
+                        <Text style={{ color: "#b32e2e", fontWeight: "bold", top: 4, left: 2 }}>Kayıt Ol</Text>
+                    </TouchableOpacity>
+                </Text>
+            </View>
         </View>
-    </View>
-}
+    );
+};
+
 const styles = StyleSheet.create({
     container: {
         top: 50,

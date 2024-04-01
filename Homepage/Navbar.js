@@ -1,26 +1,26 @@
 import { View, StyleSheet, TextInput, Touchable } from "react-native";
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons, Fontisto } from '@expo/vector-icons';
 import { TouchableOpacity } from "react-native-gesture-handler";
 
 export const Navbar = () => {
     return (
         <View style={styles.navbar}>
-            <View>
-                <Ionicons name="reorder-three-outline" size={38} color="white" style={styles.reorder} />
-            </View>
             <View style={styles.search}>
                 <TouchableOpacity>
                     <Ionicons name="search" size={24} color="#b32e2e" style={styles.searchIcon} />
                 </TouchableOpacity>
                 <TextInput style={styles.input} placeholder="Search" placeholderTextColor="#888" />
             </View>
+            <View>
+                <Fontisto name="bell" size={28} color="white" style={styles.bell} />
+            </View>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
-    reorder: {
-        left: 320,
+   bell: {
+        left: 20,
         top: 15
     },
     navbar: {
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         width: 300,
         height: 40,
         top: 15,
-        right: 28,
+        
         borderRadius: 3,
         backgroundColor: "white",
     },

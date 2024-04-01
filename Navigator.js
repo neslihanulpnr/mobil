@@ -1,5 +1,4 @@
 import { createStackNavigator } from '@react-navigation/stack';
-import { Menu } from "./Homepage/Menu";
 import { Hamper } from "./Screens/Hamper";
 import { Favorite } from "./Screens/Favorite";
 import { Account } from "./Screens/Account";

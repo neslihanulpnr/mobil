@@ -1,43 +1,27 @@
 import React, { useState } from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, TextInput } from "react-native";
-import { SignUp } from "../Component/SignUp"
-import { AntDesign } from '@expo/vector-icons';
 
 export const Login = () => {
     const [selectedTab, setSelectedTab] = useState(null);
 
-    const handleBack = () => {
-        setSelectedTab(null);
-    };
 
     return (
         <View style={styles.container}>
-            {selectedTab ? (
-                <View style={styles.contentContainer}>
-                    {selectedTab === 'SignUp' && <SignUp />}
-
-                    <TouchableOpacity onPress={handleBack} style={styles.backButton}>
-                        <AntDesign name="arrowleft" size={20} color="white" />
+            <View>
+                <View style={styles.inputContainer}>
+                    <TextInput style={styles.input} placeholder="E-posta" />
+                    <TextInput style={[styles.input, { marginTop: -80 }]} placeholder="Şifre" />
+                    <TouchableOpacity style={styles.loginBtn}>
+                        <Text style={styles.text}>Giriş Yap</Text>
                     </TouchableOpacity>
-
-                </View>
-            ) : (
-                <View>
-                    <View style={styles.inputContainer}>
-                        <TextInput style={styles.input} placeholder="E-posta" />
-                        <TextInput style={[styles.input, { marginTop: -80 }]} placeholder="Şifre" />
-                        <TouchableOpacity style={styles.loginBtn}>
-                            <Text style={styles.text}>Giriş Yap</Text>
+                    <Text style={{ fontWeight: "bold" }}>
+                        Hesabın yok mu?{' '}
+                        <TouchableOpacity>
+                            <Text style={{ color: "#b32e2e", fontWeight: "bold", top: 4, left: 2 }}>Kayıt Ol</Text>
                         </TouchableOpacity>
-                        <Text style={{ fontWeight: "bold" }}>
-                            Hesabın yok mu?{' '}
-                            <TouchableOpacity onPress={() => setSelectedTab('SignUp')}>
-                                <Text style={{ color: "#b32e2e", fontWeight: "bold", top: 4, left: 2 }}>Kayıt Ol</Text>
-                            </TouchableOpacity>
-                        </Text>
-                    </View>
+                    </Text>
                 </View>
-            )}
+            </View>
         </View>
     );
 };

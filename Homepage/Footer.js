@@ -6,6 +6,8 @@ import { Favorite } from "../Screens/Favorite";
 import { Account } from "../Screens/Account";
 import { useNavigation } from '@react-navigation/native';
 import { Home } from '../Screens/Home';
+import { Navbar } from './Navbar';
+
 
 export const Footer = () => {
 
@@ -17,13 +19,13 @@ export const Footer = () => {
     const handleHomeButtonPress = () => {
         handleButtonPress(<Home />, 'Home');
         console.log("home sayfası")
-        console.log("neresi bura",contentToShow)
+        console.log("neresi bura", contentToShow)
     };
 
     const handleFavoriteButtonPress = () => {
         handleButtonPress(<Favorite />, 'Favorite');
         console.log("favorite sayfası")
-        console.log("neresi bura2",contentToShow)
+        console.log("neresi bura2", contentToShow)
     };
 
     const handleHamperButtonPress = () => {
@@ -35,7 +37,7 @@ export const Footer = () => {
     const handleAccountButtonPress = () => {
         handleButtonPress(<Account />, 'Account');
         console.log("account sayfası")
-        console.log("neresi bura4",contentToShow)
+        console.log("neresi bura4", contentToShow)
     };
 
     useEffect(() => {
@@ -55,7 +57,9 @@ export const Footer = () => {
 
 
     return (
-        <View style={styles.container}>
+        <View>
+            <Navbar/>
+            <View style={styles.container}>
             <View style={{
                 backgroundColor: "#b32e2e",
                 width: 395,
@@ -121,7 +125,7 @@ export const Footer = () => {
                             { color: selectedButton === 'Hamper' ? "#b32e2e" : 'white' },
                         ]}
                     >
-                       Sepetim
+                        Sepetim
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity
@@ -148,7 +152,9 @@ export const Footer = () => {
                         Hesabım
                     </Text>
                 </TouchableOpacity>
+                </View>
             </View>
+            {contentToShow}
         </View>
     );
 };

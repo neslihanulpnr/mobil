@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { Octicons, AntDesign } from '@expo/vector-icons';
 import { Login } from "../Component/Login"
+import { SignUp } from '../Component/SignUp';
 
 export const Account = () => {
     const [selectedTab, setSelectedTab] = useState(null);
@@ -15,12 +16,16 @@ export const Account = () => {
             {selectedTab ? (
                 <View style={styles.contentContainer}>
                     {selectedTab === 'Login' && <Login />}
-                </View>
-            ) : (
-                <View>
+                    {selectedTab === 'SignUp' && <SignUp />}
+
                     <TouchableOpacity onPress={handleBack} style={styles.backButton}>
                         <Text><AntDesign name="arrowleft" size={20} color="white" /></Text>
                     </TouchableOpacity>
+
+                </View>
+            ) : (
+                <View>
+
                     <View>
                         <Text style={styles.text}>Alışveriş yapmak için giriş yapman lazım. </Text>
                         <Octicons name="smiley" size={40} color="black" style={styles.icon} />
@@ -81,7 +86,7 @@ const styles = StyleSheet.create({
     },
     backButton: {
         position: 'absolute',
-        top: 10,
+        top: -20,
         right: 320,
         justifyContent: 'center',
         alignItems: 'center',

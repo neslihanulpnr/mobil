@@ -9,7 +9,7 @@ export const Navbar = () => {
                 <TouchableOpacity>
                     <Ionicons name="search" size={24} color="#b32e2e" style={styles.searchIcon} />
                 </TouchableOpacity>
-                <TextInput style={styles.input} placeholder="Search" placeholderTextColor="#888" />
+                <TextInput style={styles.input} placeholder="Marka, ürün veya kategori ara" placeholderTextColor="#888" />
             </View>
             <View>
                 <Fontisto name="bell" size={28} color="white" style={styles.bell} />

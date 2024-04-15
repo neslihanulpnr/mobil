@@ -103,67 +103,144 @@ export const Home = () => {
                 </View>
 
                 <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-                <View style={{flexDirection: 'row', justifyContent: "space-between"}}>
-                  <View style={{
-                    left: 15, 
-                    width: 170, 
-                    height: 250, 
-                    backgroundColor: "white", 
-                    alignItems: "center"}}>
-                    <Image source={require("../assets/black.jpeg")} style={{width: 150, height: 200}}/>
-                    <Text>dinazor desenli kadın</Text>
-                    <Text>sweatshirt</Text>
-                  </View>
+                    <View style={{ flexDirection: 'row', justifyContent: "space-between" }}>
+                        <View style={{
+                            left: 15,
+                            width: 170,
+                            height: 250,
+                            backgroundColor: "white",
+                            alignItems: "center"
+                        }}>
+                            <Image source={require("../assets/black.jpeg")} style={{ width: 150, height: 200 }} />
+                            <Text>dinazor desenli kadın</Text>
+                            <Text>sweatshirt</Text>
+                        </View>
 
-                  <View style={{
-                    left: 15, 
-                    width: 170, 
-                    height: 250, 
-                    backgroundColor: "white", 
-                    alignItems: "center", 
-                    left: 20}}>
-                    <Image source={require("../assets/cat.jpeg")} style={{width: 150, height: 200}}/>
-                    <Text>kadın sweatshirt</Text>
-                  </View>
+                        <View style={{
+                            left: 15,
+                            width: 170,
+                            height: 250,
+                            backgroundColor: "white",
+                            alignItems: "center",
+                            left: 20
+                        }}>
+                            <Image source={require("../assets/cat.jpeg")} style={{ width: 150, height: 200 }} />
+                            <Text>kadın sweatshirt</Text>
+                        </View>
 
-                  <View style={{
-                    left: 15, 
-                    width: 170, 
-                    height: 250, 
-                    backgroundColor: "white", 
-                    alignItems: "center", 
-                    left: 25}}>
-                    <Image source={require("../assets/butterfly.jpeg")} style={{width: 150, height: 200}}/>
-                    <Text>kelebek desenli kadın</Text>
-                    <Text>sweatshirt</Text>
-                  </View>
+                        <View style={{
+                            left: 15,
+                            width: 170,
+                            height: 250,
+                            backgroundColor: "white",
+                            alignItems: "center",
+                            left: 25
+                        }}>
+                            <Image source={require("../assets/butterfly.jpeg")} style={{ width: 150, height: 200 }} />
+                            <Text>kelebek desenli kadın</Text>
+                            <Text>sweatshirt</Text>
+                        </View>
 
-                  <View style={{
-                    left: 15, 
-                    width: 170, 
-                    height: 250, 
-                    backgroundColor: "white", 
-                    alignItems: "center", 
-                    left: 30}}>
-                    <Image source={require("../assets/maneskin.jpeg")} style={{width: 150, height: 200}}/>
-                    <Text>maneskin yazılı kadın</Text>
-                    <Text>sweatshirt</Text>
-                  </View>
+                        <View style={{
+                            left: 15,
+                            width: 170,
+                            height: 250,
+                            backgroundColor: "white",
+                            alignItems: "center",
+                            left: 30
+                        }}>
+                            <Image source={require("../assets/maneskin.jpeg")} style={{ width: 150, height: 200 }} />
+                            <Text>maneskin yazılı kadın</Text>
+                            <Text>sweatshirt</Text>
+                        </View>
 
-                  <View style={{
-                    left: 15, 
-                    width: 170, 
-                    height: 250, 
-                    backgroundColor: "white", 
-                    alignItems: "center", 
-                    left: 40,
-                    marginRight: 50}}>
-                    <Image source={require("../assets/white.jpeg")} style={{width: 150, height: 200}}/>
-                    <Text>kadın sweatshirt</Text>
-                  </View>
-                </View>
+                        <View style={{
+                            left: 15,
+                            width: 170,
+                            height: 250,
+                            backgroundColor: "white",
+                            alignItems: "center",
+                            left: 40,
+                            marginRight: 50
+                        }}>
+                            <Image source={require("../assets/white.jpeg")} style={{ width: 150, height: 200 }} />
+                            <Text>kadın sweatshirt</Text>
+                        </View>
+                    </View>
                 </ScrollView>
-            
+
+                <View style={styles.sweat}>
+                    <Text style={styles.sweatText}>Pantolon ve Eşofman</Text>
+                </View>
+
+                <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                    <View style={{ flexDirection: 'row', justifyContent: "space-between" }}>
+                        <View style={{
+                            left: 15,
+                            width: 170,
+                            height: 250,
+                            backgroundColor: "white",
+                            alignItems: "center"
+                        }}>
+                            <Image source={require("../assets/blackpant.jpeg")} style={{ width: 150, height: 200 }} />
+                            <Text>siyah kumaş pantolon</Text>
+                        </View>
+
+                        <View style={{
+                            left: 15,
+                            width: 170,
+                            height: 250,
+                            backgroundColor: "white",
+                            alignItems: "center",
+                            left: 20
+                        }}>
+                            <Image source={require("../assets/blue.jpeg")} style={{ width: 150, height: 200 }} />
+                            <Text>kadın sweatshirt</Text>
+                        </View>
+
+                        <View style={{
+                            left: 15,
+                            width: 170,
+                            height: 250,
+                            backgroundColor: "white",
+                            alignItems: "center",
+                            left: 25
+                        }}>
+                            <Image source={require("../assets/cream.jpeg")} style={{ width: 150, height: 200 }} />
+                            <Text>kelebek desenli kadın</Text>
+                            <Text>sweatshirt</Text>
+                        </View>
+
+                        <View style={{
+                            left: 15,
+                            width: 170,
+                            height: 250,
+                            backgroundColor: "white",
+                            alignItems: "center",
+                            left: 30
+                        }}>
+                            <Image source={require("../assets/graypant.jpeg")} style={{ width: 150, height: 200 }} />
+                            <Text>maneskin yazılı kadın</Text>
+                            <Text>sweatshirt</Text>
+                        </View>
+
+                        <View style={{
+                            left: 15,
+                            width: 170,
+                            height: 250,
+                            backgroundColor: "white",
+                            alignItems: "center",
+                            left: 40,
+                            marginRight: 50
+                        }}>
+                            <Image source={require("../assets/gray.jpeg")} style={{ width: 150, height: 200 }} />
+                            <Text>kadın sweatshirt</Text>
+                        </View>
+                    </View>
+                </ScrollView>
+
+
+
             </View>
         </ScrollView>
     )
@@ -180,6 +257,6 @@ const styles = StyleSheet.create({
         margin: 10
     },
     sweatText: {
-       fontSize: 20  
-    }, 
+        fontSize: 20
+    },
 });

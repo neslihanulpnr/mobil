@@ -1,8 +1,7 @@
-import { Text, View, StyleSheet, TouchableOpacity, ScrollView,  } from "react-native"
+import { Text, View, StyleSheet, TouchableOpacity, } from "react-native"
 
 export const Hamper = () => {
     return (
-         <ScrollView>
             <View style={styles.Container}>
                 <View style={styles.Hamper}>
                     <Text style={styles.text}> Sepetinizde ürün bulunmamaktadır. </Text>
@@ -13,7 +12,6 @@ export const Hamper = () => {
                     </TouchableOpacity>
                 </View>
             </View>
-            </ScrollView>
     );
 };
 

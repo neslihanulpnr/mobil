@@ -16,7 +16,7 @@ export const Login = () => {
                     </TouchableOpacity>
                     <Text style={{ fontWeight: "bold" }}>
                         Hesabın yok mu?{' '}
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => setSelectedTab('SignUp')}>
                             <Text style={{ color: "#b32e2e", fontWeight: "bold", top: 4, left: 2 }}>Kayıt Ol</Text>
                         </TouchableOpacity>
                     </Text>

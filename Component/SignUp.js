@@ -12,8 +12,7 @@ export const SignUp = () => {
                     <Text style={styles.text}>Giriş Yap</Text>
                 </TouchableOpacity>
                 <Text style={{ fontWeight: "bold" }}>
-                    Hesabın yok mu?{' '}
-                    <TouchableOpacity onPress={() => setSelectedTab('SignUp')}>
+                    <TouchableOpacity>
                         <Text style={{ color: "#b32e2e", fontWeight: "bold", top: 4, left: 2 }}>Kayıt Ol</Text>
                     </TouchableOpacity>
                 </Text>
